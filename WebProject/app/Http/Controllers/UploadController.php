@@ -12,6 +12,11 @@ class UploadController extends Controller
 		$gambar = Gambar::get();
 		return view('upload',['gambar' => $gambar]);
 	}
+	public function hapus($id){
+		
+		Gambar::destroy($id);
+		return redirect('/upload')->with(['success' => 'gambar terhapus']);
+	}
 
 	public function proses_upload(Request $request){
 		$this->validate($request, [

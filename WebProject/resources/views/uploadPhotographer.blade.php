@@ -30,16 +30,16 @@
 					</div>
 
 					<div class="form-group">
-						<b>Keterangan</b>
-						<textarea class="form-control" name="keterangan"></textarea>
+						<b>alamat</b>
+						<textarea class="form-control" name="alamat"></textarea>
 					</div>
 
 					<input type="submit" value="Upload" class="btn btn-primary">
 				</form>
 				
 				<h4 class="my-5">Data</h4>
-				
-				 <table class="table table-bordered table-striped">
+
+				<table class="table table-bordered table-striped">
 					<thead>
 						<tr>
 							<th width="1%">File</th>
@@ -59,7 +59,6 @@
 						@endforeach
 					</tbody>
 				</table>
-				
 			</div>
 		</div>
 	</div>
