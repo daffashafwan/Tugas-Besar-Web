@@ -15,6 +15,10 @@
                     @endif
 
                     You are logged in!
+                    </br>
+                    <a href="/photo">My Photos</a>
+                    </br>
+                    <a href="/upload">Upload</a>
                 </div>
             </div>
         </div>

@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Web Project 2020</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+@extends('layouts.app')
 
-</head>
-<body>
+@section('content')
 	<div class="row">
 		<div class="container">
 
@@ -49,13 +44,15 @@
 					</thead>
 					<tbody>
 						@foreach($gambar as $g)
-						<tr>
-							<td><img width="150px" src="{{ url('/data_file/'.$g->file) }}"></td>
-							<td>{{$g->keterangan}}</td>
-							<td>
-							<a class="btn btn-danger" href="/upload/{{ $g->id }}">Hapus</a>
-							</td>
-						</tr>
+							@if($g->email==(Auth::user()->email))
+								<tr>
+									<td><img width="150px" src="{{ url('/data_file/'.$g->file) }}"></td>
+									<td>{{$g->keterangan}}</td>
+									<td>
+									<a class="btn btn-danger" href="/upload/{{ $g->id }}">Hapus</a>
+									</td>
+									</tr>
+							@endif
 						@endforeach
 					</tbody>
 				</table>
@@ -63,5 +60,4 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+	@endsection

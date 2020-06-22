@@ -1,0 +1,171 @@
+@font-face {
+    font-family: rage;
+    src: url('../font/RAGE.TTF');
+}
+
+@font-face {
+    font-family: marta_regular;
+    src: url('../font/Marta_Regular.otf');
+}
+
+@font-face {
+    font-family: open_sans;
+    src: url('../font/OpenSans_Regular.ttf');
+}
+
+@font-face {
+    font-family: goudy_old_style;
+    src: url('../font/GOUDOS.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    font-family: marta_regular;
+    padding-top: 25px;
+}
+
+#container {
+    padding: 0%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-top: 0px;
+    display: block;
+}
+
+#navbar {
+    background: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    float: right;
+    display: flex;
+}
+
+#navbar #logo {
+    margin-top: 15px;
+    font-family: rage;
+    letter-spacing: 5px;
+    margin-left: 2%;
+    font-size: 40px;
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+#parallax {
+    /* The image used */
+    background-image: url('asset/img3.jpg');
+    /* Set a specific height */
+    height: 700px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    height: 700px;
+    background-color: transparent;
+    display: flex;
+}
+
+.wrapper p {
+    margin-left: 15%;
+    margin-top: 150px;
+    font-size: 50px;
+    width: 100%;
+    color: white;
+    font-family: marta_regular;
+}
+
+.wrapper h5 {
+    font-family: open_sans;
+    margin-top: 20px;
+    margin-left: 15%;
+    font-size: 15px;
+    width: 100%;
+    color: white;
+}
+
+.wrapper button {
+    margin-top: 20px;
+    margin-left: 15%;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    margin-left: 15%;
+    background-color: #FF6F00;
+}
+
+#navbar a {
+    color: white;
+    padding-right: 40px;
+}
+
+.navigation {
+    float: left;
+    display: flex;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 0px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.navigation input[type=text] {
+    border-radius: 15px;
+    background-color: rgba(253, 253, 253, 0.212);
+    border-color: white;
+    color: white;
+    margin-top: 20px;
+}
+
+.navigation button {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    margin-left: 30px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+.left {
+    padding-top: 10%;
+    padding-left: 5%;
+    width: 50%;
+}
+
+.left #porto {
+    font-family: goudy_old_style;
+    font-size: 50px;
+}
+
+.right {
+    background-image: url('asset/img2.png');
+    background-position: center;
+    width: 50%;
+    height: 700px;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
