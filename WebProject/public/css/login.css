@@ -1,0 +1,139 @@
+    @font-face {
+        font-family: rage;
+        src: url('../font/RAGE.TTF');
+    }
+    
+    @font-face {
+        font-family: marta_regular;
+        src: url('../font/Marta_Regular.otf');
+    }
+    
+    @font-face {
+        font-family: open_sans;
+        src: url('../font/OpenSans_Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: goudy_old_style;
+        src: url('../font/GOUDOS.ttf');
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    a {
+        font-family: marta_regular;
+        padding-top: 25px;
+    }
+    
+    #container {
+        padding: 0%;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-top: 0px;
+        display: block;
+    }
+    
+    #navbar {
+        background: black;
+        color: white;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        float: right;
+        display: flex;
+    }
+    
+    #navbar #logo {
+        margin-top: 15px;
+        font-family: rage;
+        letter-spacing: 5px;
+        margin-left: 2%;
+        font-size: 40px;
+    }
+    
+    #navbar a {
+        color: white;
+        padding-right: 40px;
+    }
+    
+    .navigation {
+        float: left;
+        display: flex;
+        padding-bottom: 20px;
+        position: absolute;
+        right: 0px;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+    
+    .navigation input[type=text] {
+        border-radius: 15px;
+        background-color: rgba(253, 253, 253, 0.212);
+        border-color: white;
+        width: 250px;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: 700px;
+        display: flex;
+    }
+    
+    .left {
+        padding-top: 13%;
+        padding-left: 5%;
+        width: 35%;
+    }
+    
+    .left p {
+        font-family: marta_regular;
+        font-size: 40px;
+    }
+    
+    .left input {
+        width: 400px;
+    }
+    
+    .left button {
+        margin-top: 2%;
+    }
+    
+    .separator {
+        display: flex;
+        width: 100%;
+    }
+    
+    .separator hr {
+        width: 40%;
+    }
+    
+    .gabung {
+        width: 65%;
+        margin: auto;
+    }
+    
+    button {
+        width: 80px;
+    }
+    
+    .right {
+        margin: auto;
+    }
+    
+    .image5 {
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+    
+    footer {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }

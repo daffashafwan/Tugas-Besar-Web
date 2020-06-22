@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>cek</title>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+@extends('layouts.app')
 
-
-</head>
-<body>
+@section('content')
 @foreach($users as $p)
 @endforeach
-
-
-
-
-
-
-<div class="container">
-    
     <!-- Modal -->
     <div >
         <div class="modal-dialog">
@@ -81,10 +67,9 @@
             </div>
         </div>
     </div>
-</div>
 
-</body>
-</html>
+
+@endsection
 
 
 

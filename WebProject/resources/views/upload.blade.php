@@ -1,11 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="row">
+	<div class="row" style="margin-top:2%">
 		<div class="container">
 
-			<h2 class="text-center my-5">Upload Foto</h2>
-			
 			<div class="col-lg-8 mx-auto my-5">	
 
 				@if(count($errors) > 0)

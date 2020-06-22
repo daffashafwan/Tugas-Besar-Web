@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet">
-    <title>Pamer.io</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip<br> ex
                             ea commodo consequat
                         </h5>
-                        <button type="button" class="btn btn-lg btn-outline-light">GET STARTED</button>
+                        <button type="button" class="btn btn-lg btn-outline-light" onclick="window.location.href='/photo';">GET STARTED</button>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip<br> ex ea commodo
                         consequat
                     </p>
-                    <button type="button" class="btn btn-lg btn-outline-dark">JOIN NOW</button>
+                    <button type="button" class="btn btn-lg btn-outline-dark" onclick="window.location.href='/register';">JOIN NOW</button>
                 </div>
                 <div class="right"></div>
             </div>

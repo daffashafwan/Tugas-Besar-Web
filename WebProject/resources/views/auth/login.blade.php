@@ -1,17 +1,30 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="./css/login.css" rel="stylesheet">
+    <title>Login</title>
+</head>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <h2 id="logo">Pamer.io</h2>
+            <div class="navigation">
+                <a href="home.html">Home</a>
+                <a href="">Explore</a>
+                <input class="form-control form-control-sm" type="text" placeholder="Portofolio">
 
-                        <div class="form-group row">
+        </nav>
+
+        </div>
+        <div class="wrapper">
+            <div class="left">
+                <p>Masuk ke pamer.io</p>
+                <form method="POST" action="{{ route('login') }}">
+				            @csrf
+				            <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -24,8 +37,8 @@
                                 @enderror
                             </div>
                         </div>
-
-                        <div class="form-group row">
+                     
+                     <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
@@ -38,22 +51,13 @@
                                 @enderror
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                      
+                           
+  
+				            
+				            <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4"><form method="POST" action="{{ route('login') }}">
+                                <button type="submit" class="btn btn-sm btn-outline-dark">
                                     {{ __('Login') }}
                                 </button>
 
@@ -64,10 +68,30 @@
                                 @endif
                             </div>
                         </div>
-                    </form>
+                        
+				           
+							  </form>
+                <div class="separator">
+                    <hr>
+                    <h7>atau</h7>
+                    <hr>
+                </div>
+                <br>
+                <div class="gabung">
+                    <h7>Bukan member?</h7>
+											<a href="{{ route('register') }}">{{ __('Gabung Sekarang!') }}</a>
                 </div>
             </div>
+
+            <div class="right">
+                <img class="image5" src="./css/asset/img4.png" alt="image 5" width="300" height="464">
+            </div>
+
         </div>
-    </div>
-</div>
-@endsection
+</body>
+<footer>
+
+</footer>
+
+</html>
+

@@ -45,6 +45,7 @@ a {
     height: 70px;
     float: right;
     display: flex;
+    z-index:1;
 }
 
 #navbar #logo {
