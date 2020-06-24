@@ -43,7 +43,7 @@ $(document).ready(function () {
             @guest
                 <a href="/landing">Home</a>
                 <a href="/photo">Explore</a>
-                <a href="">Photographer</a>
+                <a href="/photographer">Photographer</a>
                 <form action="/photo/cari" method="GET">
                 <input id="formCari" name="cari" class="form-control form-control-sm" type="text" placeholder="Portofolio" value="{{ old('cari') }}">
                 </form>
@@ -51,12 +51,12 @@ $(document).ready(function () {
                 @else
                 <a href="/landing">Home</a>
                 <a href="/photo">Explore</a>
-                <a href="">Photographer</a>
+                <a href="/photographer">Photographer</a>
                 <form action="/photo/cari" method="GET">
                 <input id="formCari" name="cari" class="form-control form-control-sm" type="text" placeholder="Portofolio" value="{{ old('cari') }}">
                 </form>
                 <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="/home/logout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 

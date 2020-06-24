@@ -15,6 +15,7 @@
             <div class="navigation">
                 <a href="/landing">Home</a>
                 <a href="/photo">Explore</a>
+                <a href="/photographer">Photographers</a>
                 <form action="/photo/cari" method="GET">
                 <input id="formCari" name="cari" class="form-control form-control-sm" type="text" placeholder="Portofolio" value="{{ old('cari') }}">
                 </form>

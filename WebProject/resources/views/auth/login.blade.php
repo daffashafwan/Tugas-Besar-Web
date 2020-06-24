@@ -12,8 +12,9 @@
         <nav id="navbar">
             <h2 id="logo">Pamer.io</h2>
             <div class="navigation">
-                <a href="home.html">Home</a>
-                <a href="">Explore</a>
+                <a href="/landing">Home</a>
+                <a href="/photo">Explore</a>
+                <a href="">Photographers</a>
                 <input class="form-control form-control-sm" type="text" placeholder="Portofolio">
 
         </nav>

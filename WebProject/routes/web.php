@@ -20,7 +20,7 @@ Route::get('/landing', function(){
 Route::get('/profil/{id}','ProfilController@index');
 Route::get('/profil/edit/{id}','ProfilController@edit');
 Route::post('/profil/update','ProfilController@update');
-
+Route::get('/photographer', 'PhotograhpherController@show');
 Route::get('/photo', 'PhotoController@show');
 Route::get('/photo/cari','PhotoController@cari');
 //Route::resource('/upload', 'UploadController');
