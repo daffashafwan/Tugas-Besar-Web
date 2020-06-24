@@ -31,7 +31,7 @@ $(document).ready(function () {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     
 </head>
 <body>
@@ -61,8 +61,8 @@ $(document).ready(function () {
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/profil/{{ Auth::user()->id }}">Profil</a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" style="color:black" href="/profil/{{ Auth::user()->id }}">Profil</a>
+                                    <a class="dropdown-item" style="color:black" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -84,7 +84,7 @@ $(document).ready(function () {
         </main>
     </div>
     <footer style="align:center">
-    Made With Love By 332, 336, 365, 370
+    Made With Love By 227, 332, 336, 365, 370
     </footer>
 </body>
 </html>

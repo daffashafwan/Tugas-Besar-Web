@@ -4,7 +4,7 @@
 @foreach($users as $p)
 @endforeach
     <!-- Modal -->
-    <div >
+    <div style="margin-top:5%">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

@@ -3,10 +3,18 @@
 @section('content') 
 
 <div style="margin-top:5%">
-<form action="/photo/cari" method="GET">
-	<label>Cari Disini</label>
+<form action="/photo/cari" method="GET" style="margin-left:20%;margin-right:20%">
+	<!--<label>Cari Disini</label>
 	<input type="text" name="cari" placeholder="Cari Gambar .." value="{{ old('cari') }}">
-	<input type="submit" value="CARI">
+	<input type="submit" value="CARI">-->
+	<div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+   	<div class="input-group">
+   		<div class="input-group-prepend">
+         <button id="button-addon2" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+       </div>
+       <input name="cari" type="search" placeholder="What're you searching for?" value="{{ old('cari') }}" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+   	</div>
+   </div>
 </form>
 
 	<div class="container-fluid" style="margin:2%">

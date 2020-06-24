@@ -14,7 +14,7 @@
             <div class="navigation">
                 <a href="/landing">Home</a>
                 <a href="/photo">Explore</a>
-                <a href="">Photographers</a>
+                <a href="/photographer">Photographers</a>
                 <input class="form-control form-control-sm" type="text" placeholder="Portofolio">
 
         </nav>
