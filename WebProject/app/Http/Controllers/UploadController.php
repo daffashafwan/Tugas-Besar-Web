@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 use App\Gambar;
 use App\User;
 use Auth;
 
 class UploadController extends Controller
-{
-	public function upload(){
+{	
+	public function upload($id){
 		$gambar = Gambar::get();
 		$User = User::get();
-		return view('upload',['gambar' => $gambar, 'User' => $User ]);
+		$UserId = $id;
+		return view('upload',['User' => $User,'gambar'=>$gambar]);
 	}
 	public function hapus($id){
 		
@@ -27,13 +28,11 @@ class UploadController extends Controller
 			'keterangan' => 'required',
 		]);
 
-		
 		$file = $request->file('file');
 
 		$nama_file = time()."_".$file->getClientOriginalName();
 		$userEmail = Auth::user()->email;
-		$userName = Auth::user()->name;
-		
+		$userName = Auth::user()->name;		
 		$tujuan_upload = 'data_file';
 		$file->move($tujuan_upload,$nama_file);
 
@@ -42,6 +41,7 @@ class UploadController extends Controller
 			'email' => $userEmail,
 			'file' => $nama_file,
 			'keterangan' => $request->keterangan,
+			'user_id' => $request->id,
 		]);
 
 		return redirect()->back();

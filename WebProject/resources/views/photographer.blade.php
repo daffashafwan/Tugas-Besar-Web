@@ -58,32 +58,28 @@
 
         </div>
         <div class="wrapper">
-            @foreach($gambar as $g)
+            @foreach($User as $u)
             <div class="item">
                 <div class="item_left">
                     <div class="box">
                         <img src="asset/ava1.png" alt="profile1">
                         <div class="id">
-                            <h5>{{$g->name}}</h5>
-                            <h6>{{$g->email}}</h6>
+                            <h5>{{$u->name}}</h5>
+                            <h6>{{$u->email}}</h6>
                             <p>Fotografer pribadi</p>
                             <p>Cp = +39 222 333 555</p>
                         </div>
                     </div>
                 </div>
                 <div class="item_right">
+               	@foreach($gambar as $g)
+               		@if($g->user_id==($u->id))
                     <div class="imgcontainer">
-                        <img src="./css/asset/porto1.png" alt="image1" width="272" height="177">
-                        <div class="bottom-left">caption</div>
+                        <img src="{{ url('/data_file/'.$g->file) }}" alt="image1" width="272" height="177">
+                        <div class="bottom-left">{{$g->keterangan}}</div>
                     </div>
-                    <div class="imgcontainer">
-                        <img src="./css/asset/porto2.png" alt="image1" width="272" height="177">
-                        <div class="bottom-left">caption</div>
-                    </div>
-                    <div class="imgcontainer">
-                        <img src="./css/asset/porto3.png" alt="image1" width="272" height="177">
-                        <div class="bottom-left">caption</div>
-                    </div>
+                    @endif
+                @endforeach    
 
                 </div>
             </div>

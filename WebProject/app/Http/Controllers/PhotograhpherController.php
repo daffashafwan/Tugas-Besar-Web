@@ -10,8 +10,10 @@ use App\Gambar;
 class PhotograhpherController extends Controller
 {
     public function show(){
-    	$gambar = DB::table('gambar')->join('users', 'gambar.email','=','users.email')->select('gambar.*', 'users.*')->get();
-    	return view('photographer',['gambar'=>$gambar]);
+    	$User = User::get();
+    	$id_collect = DB::table('gambar')->pluck('user_id');
+    	$gambar = Gambar::whereIn('user_id', $id_collect)->get();
+    	return view('photographer',['User'=>$User, 'gambar'=>$gambar]);
     }
     //
 }

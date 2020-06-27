@@ -73,7 +73,7 @@ $(document).ready(function () {
                                     </form>
                                 </div>
                             </li>
-                <button type="button" class="btn btn-sm btn-outline-light" onclick="window.location.href='/upload'";>Upload</button>
+                <button type="button" class="btn btn-sm btn-outline-light" onclick="window.location.href='/upload/{{ Auth::user()->id }}'";>Upload</button>
 						@endguest
 						</div>
         </nav>

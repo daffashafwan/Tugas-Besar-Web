@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/upload', 'UploadController@upload');
+Route::get('/upload/{id}', 'UploadController@upload');
 Route::get('/landing', function(){
 	return view('landing');
 });
@@ -24,7 +24,7 @@ Route::get('/photographer', 'PhotograhpherController@show');
 Route::get('/photo', 'PhotoController@show');
 Route::get('/photo/cari','PhotoController@cari');
 //Route::resource('/upload', 'UploadController');
-Route::get('upload/{id}', 'UploadController@hapus');
+Route::get('upload/hapus/{id}', 'UploadController@hapus');
 Route::post('/upload/proses', 'UploadController@proses_upload');
 Route::get('/', function () {
     return view('auth/login');

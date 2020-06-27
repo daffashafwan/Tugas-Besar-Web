@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+@foreach($User as $p)
+@endforeach
 	<div class="row" style="margin-top:2%">
 		<div class="container">
 
@@ -16,7 +18,7 @@
 
 				<form action="/upload/proses" method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
-
+				<input type="hidden" name="id" value="{{ $p->id }}">
 					<div class="form-group">
 						<b>File Gambar</b><br/>
 						<input type="file" name="file">
